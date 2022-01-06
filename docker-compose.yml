@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  redis:
+    build:
+      dockerfile: Dockerfile
+      context: redis/
+        
+    ports:
+      - "6379:6379"
+    volumes:
+      - /Users/luciann/Desktop/training/redis-docker/redis:/data
+
+  py:
+    build:
+      dockerfile: Dockerfile
+      context: py/
