@@ -15,3 +15,6 @@ services:
     build:
       dockerfile: Dockerfile
       context: py/
+
+    volumes:
+      - /Users/luciann/Desktop/training/redis-docker/py:/code

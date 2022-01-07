@@ -1,6 +1,6 @@
-import redis
+from redis import Redis
 
-agent = redis.Redis(host='localhost', port=6379)
+agent = Redis(host='redis', port=6379)
 
 agent.set('hola', 'hello-whoever-you-are')
 
